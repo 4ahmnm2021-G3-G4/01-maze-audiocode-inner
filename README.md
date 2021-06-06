@@ -1,7 +1,7 @@
 # 01-maze-audiocode-smeerws
 
 ### Project description: 
-Irrgarten im Frühlingstil mit verschiedenen Aufgaben, die zu lösen sind, um den Garten zu entfliehen. Eine Münze per Sound finden, eine Münze per Drag & Drop eines Objektes in ein isTriggered und ein Rätsel mit nur einer richtigen Antwort. Den Schlüssel bekommt man, indem man alle Münzen in den Wunsch Brunnen wirft. Mit den Coins geht jeweils eine Tür im Irrgarten auf und der Spielraum vergrößert sich.
+Irrgarten im Frühlingstil mit verschiedenen Aufgaben, die zu lösen sind, um den Garten zu entfliehen. Eine Münze per Sound finden, eine Münze per Drag & Drop eines Objektes in ein isTrigger Collider und ein Rätsel lösen, mit nur einer richtigen Antwort. Den Schlüssel bekommt man, indem man alle drei Münzen in den Wunsch Brunnen wirft. Mit den Coins geht jeweils eine Tür im Irrgarten auf und der Spielraum vergrößert sich.
 
 ### Development platform: 
 OS: MacOS Big Sur M1 Chip, Game Engine: Unity 2019.1.14f1, Visual Studio 2019, Steam,  
