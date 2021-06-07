@@ -5,28 +5,26 @@ using UnityEngine;
 public class CollectCoin : MonoBehaviour
 {
 
-    public GameObject Coin;
-    public GameObject CoinSound;
+
     public int count;
-    private Rigidbody rb;
 
     private void Start()
-    {
-        rb = GetComponent<Rigidbody>();
+    { 
         count = 0;
     }
 
 
-    public void OnTriggerEnter(Collision collider)
+    public void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.CompareTag("Coin"))
+        if (collider.gameObject.tag == "Coin")
         {
-            Debug.Log(collider.collider.name);
-            Destroy(Coin);
-            Destroy(CoinSound);
-            count =+ 1;
+            Debug.Log("mit Coin collided");
+            collider.gameObject.SetActive(false);
+            //Destroy(gameobjekt mit tag Coin)
         }
+        count = +1;
 
     }
+    
 }
 
