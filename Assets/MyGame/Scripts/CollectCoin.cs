@@ -6,20 +6,27 @@ public class CollectCoin : MonoBehaviour
 {
 
     public GameObject Coin;
-    public GameObject Player;
-    public Collider CoinCollider;
+    public GameObject CoinSound;
+    public int count;
+    private Rigidbody rb;
 
-
-
-
-    public void OnCollisionEnter()
+    private void Start()
     {
-        CoinCollider = Coin.GetComponent<BoxCollider>();
+        rb = GetComponent<Rigidbody>();
+        count = 0;
+    }
 
-       // if (CoinCollider.isTrigger == true)
-            //Destroy(Coin);
 
-                //ontrigger??
+    public void OnTriggerEnter(Collision collider)
+    {
+        if (collider.gameObject.CompareTag("Coin"))
+        {
+            Debug.Log(collider.collider.name);
+            Destroy(Coin);
+            Destroy(CoinSound);
+            count =+ 1;
+        }
 
     }
 }
+
