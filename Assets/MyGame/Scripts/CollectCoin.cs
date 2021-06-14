@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CollectCoin : MonoBehaviour
 {
 
 
     public int count;
+    public Text scoreText;
+    public Text allPickedUp;
 
     private void Start()
     { 
@@ -16,13 +19,20 @@ public class CollectCoin : MonoBehaviour
 
     public void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.tag == "Coin")
+        if (collider.tag == "Coin")
         {
             Debug.Log("mit Coin collided");
-            collider.gameObject.SetActive(false);
+            Destroy(collider.gameObject);
+            count += 1;
             //Destroy(gameobjekt mit tag Coin)
+            scoreText.text = count.ToString() + "/3 Coins";
         }
-        count = +1;
+
+        if (count ==3)
+        {
+        allPickedUp.enabled = true;
+        }
+       
 
     }
     
