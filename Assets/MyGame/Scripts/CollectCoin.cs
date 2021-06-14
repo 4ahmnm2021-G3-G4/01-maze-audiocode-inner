@@ -19,12 +19,12 @@ public class CollectCoin : MonoBehaviour
 
     public void OnTriggerEnter(Collider collider)
     {
-        if (collider.tag == "Coin")
+        if (collider.gameObject.CompareTag("Coin"))
         {
             Debug.Log("mit Coin collided");
+            //Destroy(gameobjekt mit tag Coin)
             Destroy(collider.gameObject);
             count += 1;
-            //Destroy(gameobjekt mit tag Coin)
             scoreText.text = count.ToString() + "/3 Coins";
         }
 

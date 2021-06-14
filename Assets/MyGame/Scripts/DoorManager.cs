@@ -7,6 +7,7 @@ public class DoorManager : MonoBehaviour
   public int collected;
   public int KeyAmount = 1;
   public GameObject door;
+  public bool openDoor;
 
   void OnCollisionEnter(Collision collision)
   {

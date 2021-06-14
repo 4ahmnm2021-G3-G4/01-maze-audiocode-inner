@@ -11,7 +11,7 @@ public class OpenDoors : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void CoinCollected()
+    void openDoor()
     {
      if(collected == CoinAmount)
      collected = collected + 1;
