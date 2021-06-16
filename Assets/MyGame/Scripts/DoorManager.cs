@@ -4,23 +4,19 @@ using UnityEngine;
 
 public class DoorManager : MonoBehaviour
 {
-  public int collected;
-  public int KeyAmount = 1;
-  public GameObject door;
-  public bool openDoor;
+    [SerializeField]
+    CollectCoin collectCoinO;
+    int doorsCounter = 1;
+    [SerializeField]
+    GameObject[] doorsGOA = new GameObject[4];
 
-  void OnCollisionEnter(Collision collision)
-  {
-    if (collision.gameObject.tag == "Coin")
+    public void TriggerEntered()
     {
-      collected = collected +1;  
-      collision.gameObject.active = false;
-      Debug.Log("Key touched Door");
+        Debug.Log(collectCoinO.count + " " + doorsCounter);
+        if (collectCoinO.count == doorsCounter)
+        {
+            doorsGOA[doorsCounter - 1].SetActive(false);
+            doorsCounter++;
+        }
     }
-    if (collected == KeyAmount)
-    {
-      Debug.Log("Key eingesammelt");
-      door.transform.rotation = Quaternion.Euler(new Vector3(0f, -90f ,0f));
-    }
-  }
 }

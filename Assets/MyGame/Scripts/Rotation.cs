@@ -12,11 +12,5 @@ public class Rotation : MonoBehaviour
     void Update()
     {
      Coin.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
-     
-
-    
-
     }
-
- 
 }
