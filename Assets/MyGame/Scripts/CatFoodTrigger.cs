@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class CatFoodTrigger : MonoBehaviour
 {
-    public GameObject catCol;
+    public GameObject catFood;
     public GameObject Coin2;
+    public AudioSource Cat;
     
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider catcoll)
     {
-        if (catCol.CompareTag("CatTrigger"))
+       
+        if (catcoll.gameObject.CompareTag("CatTrigger"))
         {
             Coin2.transform.position= new Vector3(7, 1, 11);
-            transform.position = new Vector3(7, 5, 13);
+            catFood.transform.position = new Vector3(7, 5, 13);
+            Cat.Stop();
         }
+
+       
 
     }
 }

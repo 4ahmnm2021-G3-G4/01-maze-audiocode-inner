@@ -5,12 +5,12 @@ using UnityEngine;
 public class Rotation : MonoBehaviour
 {
 
-    public GameObject Coin;
+   
     public float xAngle, yAngle, zAngle = 2f;
    // public float yPosition;
 
     void Update()
     {
-     Coin.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
+     gameObject.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
     }
 }

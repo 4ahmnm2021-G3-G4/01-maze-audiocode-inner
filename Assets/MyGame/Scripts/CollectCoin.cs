@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class CollectCoin : MonoBehaviour
 {
-
-
     public int count = 0;
     public Text scoreText;
     public Text allPickedUp;
