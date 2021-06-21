@@ -1,7 +1,7 @@
 # 01-maze-audiocode-smeerws
 
 ### Project description: 
-Irrgarten im Frühlingstil mit verschiedenen Aufgaben, die zu lösen sind, um den Garten zu entfliehen. Eine Münze per Sound finden, eine Münze per Drag & Drop eines Objektes in ein isTrigger Collider und ein Rätsel lösen, mit nur einer richtigen Antwort. Den Schlüssel bekommt man, indem man alle drei Münzen in den Wunsch Brunnen wirft. Mit den Coins geht jeweils eine Tür im Irrgarten auf und der Spielraum vergrößert sich.
+Man befindet sich an einem Frühling Abend in einem Irrgarten, indem sich ein Wunschbrunnen befindet soll. Um sich jedoch etwas wünschen zu dürfen benötigt man 3 Goldmünzen, die man im Spielverlauf erst finden und einsammeln muss. Die erste Münze findet man nur per Sound. Die zweite Münze befindet sich in den Pfoten einer schwarzen hungrigen Katze, die die Münze nur durch tauschen rüberwachsen lässt. Die letzte Münze bekommt man, indem man das Rätsel eines Zauberes löst. Durch lösen verschiedener Aufgaben gelingt es einem am Ende einen Wunsch zu machen und aus dem Labyrinth zu entkommen.  Mit den Coins geht jeweils eine geheime Tür im Irrgarten auf und der Spielraum erweitert sich.
 
 ### Development platform: 
 OS: MacOS Big Sur M1 Chip, Game Engine: Unity 2019.1.14f1, Visual Studio 2019, Steam,  
@@ -25,18 +25,24 @@ Oculus Rift/S, Vive;
 Tested on Oculus Rift S
 
 ### Visuals: 
+![](img/Maze.png)
+![](img/WishWell.png)
+![](img/Cat.png)
+![](img/Objects.png)
 
 
 
 ### Third party material: 
-(if used Fonts, Sounds, Music, Graphics, Materials, Code etc.)
+-Graphics and Materials from Unity Asset Store
 
 ### Project state: 
-20%/100% finished
+98%/100% finished
 <progress max="100" value="2"></progress>
 
 ### Limitations: 
 
 ### Lessons Learned: 
+-onTrigger enter commands
+-Audiosource workflow
 
 Copyright by smeerws :)
