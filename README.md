@@ -45,4 +45,4 @@ Tested on Oculus Rift S
 -onTrigger enter commands
 -Audiosource workflow
 
-Copyright by smeerws :)
+Copyright by inner-e
