@@ -31,6 +31,8 @@ Tested on Oculus Rift S
 ![](img/Objects.png)
 
 
+Video Proof of Gameplay: https://we.tl/t-2SYAnm23HB
+
 
 ### Third party material: 
 -Graphics and Materials from Unity Asset Store
